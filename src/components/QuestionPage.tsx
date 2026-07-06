@@ -1,13 +1,12 @@
 
 import React, { useState, useEffect, useCallback } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { Question, Answer, VoteDirection, Author } from '../types';
+import { Question, Answer, VoteDirection } from '../types';
 import { RichTextEditor } from './RichTextEditor';
 import { ChevronUpIcon, ChevronDownIcon, CheckIcon, TrashIcon } from './icons';
 import { useAuth, useUser } from '@clerk/clerk-react';
 import * as apiService from '../services/apiService';
 
-type VoteStatusMap = { [answerId: string]: VoteDirection };
 
 const AnswerComponent: React.FC<{
   answer: Answer;

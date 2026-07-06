@@ -1,6 +1,4 @@
 
-import React from 'react';
-
 export const LogoIcon = ({ className }: { className?: string }) => (
   <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
     <path d="M4 17.5l4-4L12 18l4-4.5 4 4.5" />
